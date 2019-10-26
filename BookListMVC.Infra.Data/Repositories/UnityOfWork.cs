@@ -12,8 +12,6 @@ namespace BookList.Infra.Data.Repositories
         private readonly ApplicationDbContext _context;
         public IBooksRepository Books { get; }
 
-        public IBooksRepository Categories => throw new NotImplementedException();
-
         public UnityOfWork(ApplicationDbContext context)
         {
             _context = context;

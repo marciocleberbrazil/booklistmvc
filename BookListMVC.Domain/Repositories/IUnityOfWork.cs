@@ -7,7 +7,7 @@ namespace BookList.Domain.Repositories
 {
     public interface IUnityOfWork : IDisposable
     {
-        IBooksRepository Categories { get; }
+        IBooksRepository Books { get; }
 
         Task<int> CompleteAsync();
     }
