@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListMVC", "BookListMVC\BookListMVC.csproj", "{09265ACF-5966-49D3-9E82-DEAA269863DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListMVC.Domain", "BookListMVC.Domain\BookListMVC.Domain.csproj", "{33EEE9DF-9232-45E4-812F-7EC81BDBA3F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookList.Domain", "BookListMVC.Domain\BookList.Domain.csproj", "{33EEE9DF-9232-45E4-812F-7EC81BDBA3F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListMVC.Infra.Data", "BookListMVC.Infra.Data\BookListMVC.Infra.Data.csproj", "{107AB624-C144-469F-A235-DC1487481787}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookList.Infra.Data", "BookListMVC.Infra.Data\BookList.Infra.Data.csproj", "{107AB624-C144-469F-A235-DC1487481787}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

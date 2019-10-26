@@ -1,11 +1,11 @@
-﻿using BookListMVC.Domain.Models;
+﻿using BookList.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookListMVC.Infra.Data.EntityConfig
+namespace BookList.Infra.Data.EntityConfig
 {
     public class BookConfiguration : IEntityTypeConfiguration<Book>
     {

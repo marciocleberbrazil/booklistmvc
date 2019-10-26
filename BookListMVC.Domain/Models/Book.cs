@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookListMVC.Domain.Models
+namespace BookList.Domain.Models
 {
     public class Book
     {
