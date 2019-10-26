@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListMVC", "BookListMVC\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListMVC.Domain", "BookListMVC.Domain\BookListMVC.Domain.csproj", "{33EEE9DF-9232-45E4-812F-7EC81BDBA3F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListMVC.Infra.Data", "BookListMVC.Infra.Data\BookListMVC.Infra.Data.csproj", "{107AB624-C144-469F-A235-DC1487481787}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{33EEE9DF-9232-45E4-812F-7EC81BDBA3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33EEE9DF-9232-45E4-812F-7EC81BDBA3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33EEE9DF-9232-45E4-812F-7EC81BDBA3F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{107AB624-C144-469F-A235-DC1487481787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107AB624-C144-469F-A235-DC1487481787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107AB624-C144-469F-A235-DC1487481787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107AB624-C144-469F-A235-DC1487481787}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
