@@ -1,4 +1,6 @@
+using BookList.Domain.Repositories;
 using BookList.Infra.Data.DbContexts;
+using BookList.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,8 @@ namespace BookListMVC
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IUnityOfWork, UnityOfWork>();
 
             services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation();
