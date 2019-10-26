@@ -44,5 +44,38 @@ namespace BookListMVC.Controllers
 
             return View(book);
         }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var book = await _unityOfWork.Books.GetAsync(id);
+
+            if (book == null) return NotFound();
+
+            return View(book);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Book book)
+        {
+            if (ModelState.IsValid)
+            {
+                var bookFromDatabase = await _unityOfWork.Books.GetAsync(book.Id);
+
+                if (bookFromDatabase == null) return NotFound();
+
+                bookFromDatabase.ISBN = book.ISBN;
+                bookFromDatabase.Name = book.Name;
+                bookFromDatabase.Author = book.Author;
+
+                var result = await _unityOfWork.CompleteAsync();
+
+                TempData["CreateSuccess"] = $"Book {book.Name} has been updated";
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(book);
+        }
     }
 }
