@@ -77,5 +77,21 @@ namespace BookListMVC.Controllers
 
             return View(book);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var bookFromDatabase = await _unityOfWork.Books.GetAsync(id);
+
+            if (bookFromDatabase == null) return NotFound();
+
+            _unityOfWork.Books.Remove(bookFromDatabase);
+            await _unityOfWork.CompleteAsync();
+
+            TempData["CreateSuccess"] = $"Book {bookFromDatabase.Name} has been deleted";
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
