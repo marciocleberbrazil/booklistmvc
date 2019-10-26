@@ -11,6 +11,7 @@ namespace BookList.Domain.Repositories
         TEntity Get(int id);
         Task<TEntity> GetAsync(int id);
         IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
         IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
 
         // This method was not in the videos, but I thought it would be useful to add.

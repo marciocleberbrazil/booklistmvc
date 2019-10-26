@@ -73,5 +73,10 @@ namespace BookList.Infra.Data.Repositories
         {
             Context.Set<TEntity>().RemoveRange(entities);
         }
+
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        {
+            return await Context.Set<TEntity>().ToListAsync();
+        }
     }
 }
